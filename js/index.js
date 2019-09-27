@@ -42,7 +42,7 @@
       });
       $(".question-options input:radio[name='answer']").click(function(){
         if (questionIndex == (selectQuestions.length - 1)) {
-          gradeQuestion()
+          gradeQuestion(this.value)
           renderSuccess()
           alert('end of quiz');
         } else {
