@@ -21,15 +21,20 @@
 
     const renderSuccess = () => {
       console.log('final score is ' + score + ' on 100')
+      $('.question-number').text('');
+      $('.question-question').text('');
+      $('.question-options').text('');
+      $('<p>Congrats!!! You be Naija Star!</p>').appendTo('.question-question');
+      $('<img src="https://media.giphy.com/media/ehhuGD0nByYxO/giphy.gif">').appendTo('.question-options');
     }
 
     // call function to render question (questionIndex)
     const renderQuestion = (qIndex) => {
       let question = selectQuestions[qIndex];
       // get question number and populate qith question number
-      $('.question-number').text('')
-      $('.question-question').text('')
-      $('.question-options').text('')
+      $('.question-number').text('');
+      $('.question-question').text('');
+      $('.question-options').text('');
       $('.question-number').text('Question ' + (qIndex + 1));
       // get question-question and populate with quesion
       $('.question-question').text(question.question);
@@ -57,6 +62,5 @@
 
 $( document ).ready(function() {
   renderQuestion(questionIndex);
-
 });
 
