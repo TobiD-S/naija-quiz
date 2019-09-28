@@ -1,6 +1,16 @@
-.carousel-item{
-  height: 500px;
+body { 
+  background: url(../img/Lagos8.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.carousel-item img{
-  height: 500px;
+.quiz-section{
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+label{
+  margin-left: 20px;
 }
