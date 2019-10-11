@@ -9,7 +9,7 @@
       if (ans == selectQuestions[questionIndex].answer) {
         score += 20;
       }
-       // increament questionIndex by 1 questionIndex ++
+       // increment questionIndex by 1 questionIndex ++
        questionIndex += 1;
     };
 
@@ -35,7 +35,7 @@
     // call function to render question (questionIndex)
     const renderQuestion = (qIndex) => {
       let question = selectQuestions[qIndex];
-      // get question number and populate qith question number
+      // get question number and populate with question number
       $('.question-number').text('');
       $('.question-question').text('');
       $('.option1').text('');
@@ -43,7 +43,7 @@
       $('.option3').text('');
       $('.option4').text('');
       $('.question-number').text('Question ' + (qIndex + 1));
-      // get question-question and populate with quesion
+      // get question-question and populate with question
       $('.question-question').text(question.question);
       // get question-options and populate with options as radio
       question.options.forEach((element, i) => {
